@@ -1,0 +1,28 @@
+/* Container for the scrolling text */
+.scrolling-container {
+    width: 100%; /* Full width of the screen */
+    overflow: hidden; /* Hide anything outside of the container */
+    background: #FFFFFF; /* Dark background for contrast */ /* Vertical padding */
+  }
+  
+  /* Scrolling text style */
+  .scrolling-text {
+    white-space: nowrap; /* Prevent text from wrapping */
+    color: #6B3F4F; /* White text color */
+    font-size: 24px; /* Adjust font size */
+    font-family: Arial, sans-serif; /* Font style */
+    animation: scrollText 30s linear infinite; /* Apply the animation */
+  }
+  
+  /* Define the scroll animation */
+  @keyframes scrollText {
+    0% {
+      transform: translateX(100%); /* Start the text off-screen to the right */
+    }
+    100% {
+      transform: translateX(-100%); /* End the text off-screen to the left */
+    }
+  }
+
+
+
