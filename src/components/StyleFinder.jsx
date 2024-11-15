@@ -713,7 +713,7 @@ export default function Component() {
                         >
                           <img
                             alt="Party"
-                            src="https://s7ap1.scene7.com/is/image/adityabirlafashion/20240830_party_womens_stylefinder_desktop_HP2"
+                            src="https://github.com/ajayjain62/Gulabo/blob/main/src/assets/img/modal/bedsheet%20(2).jpg"
                             title="Party"
                             style={{
                               boxSizing: "border-box",

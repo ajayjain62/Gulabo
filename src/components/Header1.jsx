@@ -23,6 +23,7 @@ export default function NavHeader() {
     { name: "Dohar", link: "/kids" },   // Updated for React Router
     { name: "Mattress Protector", link: "/" },       // Updated for React Router
     { name: "Cushions", link: "/brands" } // Updated for React Router
+    
   ];
 
   return (
@@ -41,7 +42,7 @@ export default function NavHeader() {
             <div className="header-content">
               {/* Logo Section */}
               <div className="pantaloons-logo">
-                <Link to="/" title="Pantaloons" className="logo-link">
+                <Link to="/" title="Gulabi Decor" className="logo-link">
                   <img
                     className="svgIconImg"
                     height={50}
