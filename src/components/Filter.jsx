@@ -26,7 +26,7 @@ const FilterSection = () => {
           >
             <span className="filter-section-title">{filter.charAt(0).toUpperCase() + filter.slice(1)}</span>
             <span className="filter-section-icon">
-              {openSections[filter] ? '▲' : '+'}
+              {openSections[filter] ? '-' : '+'}
             </span>
           </div>
           <div className={`filter-options ${openSections[filter] ? 'open' : ''}`}>
