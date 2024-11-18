@@ -1,0 +1,126 @@
+/* Global Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* Main Section */
+.main-section {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: block;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.overlay-section {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.section-title {
+  font-family: "Roboto, Helvetica, Arial, sans-serif";
+  font-weight: 300;
+  font-size: 3.75rem;
+  line-height: 1.2;
+  letter-spacing: -0.00833em;
+  margin-bottom: 24px;
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Card */
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 349px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.21) 5px 3px 22px;
+  background-color: #fff;
+  transform: translateY(0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 8px 25px;
+}
+
+/* Image Container */
+.image-container {
+  max-height: 284px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 284px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+  animation: scaleUp 0.3s forwards;
+}
+
+/* Details Box */
+.details-box {
+  padding: 16px;
+  text-align: center;
+  transform: translateY(-34px);
+}
+
+.card-title {
+  font-family: "Proxima Nova, sans-serif";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+}
+
+.card-description {
+  display: block;
+  font-family: "Proxima Nova, sans-serif";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  padding-top: 8px;
+}
+
+.shop-now {
+  display: block;
+  font-family: "Proxima Nova, sans-serif";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  padding-top: 11px;
+  color: #000;
+  cursor: pointer;
+  text-decoration: underline;
+}
