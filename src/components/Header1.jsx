@@ -31,7 +31,8 @@ export default function NavHeader() {
     <div className="scrolling-container">
       <p className="scrolling-text"
       style={{
-        fontSize:"16px"
+        fontSize:"16px",
+        
       }}
       >Welcome to Gulabi Decor! Avail our exclusive offer—use code FIRST20 on your first order and get 20% off. Shop now and enjoy premium quality bedsheets and mattresses!</p>
     </div>

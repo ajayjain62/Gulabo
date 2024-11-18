@@ -1,6 +1,11 @@
 .filter-section {
   width: 250px;
+  position: static; /* Sticky positioning */
+  background-color: #ffffff; /* Optional: Add a background color for better visibility */
+  z-index: 1000; /* Ensure it stays above other elements */
+  padding: 10px; /* Add padding for better layout */
 }
+
 
 .filter-header {
   display: flex;

@@ -988,7 +988,7 @@ export default function Component() {
                     font: "inherit",
                     verticalAlign: "initial",
                     borderRadius: "10px",
-                    background: "rgb(240, 254, 255)",
+                    background: "Beige",
                     padding: "23px 16px 16px",
                     fontFamily: "proxima-nova",
                   }}
@@ -1478,7 +1478,9 @@ export default function Component() {
                     role="button"
                     tabIndex="-1"
                     style={{
+                      
                       boxSizing: "border-box",
+                      color:"black",
                       padding: "0px",
                       border: "0px",
                       font: "inherit",
@@ -1510,6 +1512,7 @@ export default function Component() {
                     role="button"
                     tabIndex="0"
                     style={{
+                      color:"Black",
                       boxSizing: "border-box",
                       padding: "0px",
                       border: "0px",

@@ -1,6 +1,7 @@
 /* General Layout and Styling */
 .nav-header-container {
   width: 100%;
+  height: 100px !important;
   background-color: #fff;
   position: relative;
   font-family: Arial, sans-serif;
@@ -9,8 +10,8 @@
 
 .scrolling-container {
   width: 100%;
-  background-color: #f2f2f2;
-  padding: 10px 0;
+  background-color: Beige;
+  padding:0;
   text-align: center;
 }
 

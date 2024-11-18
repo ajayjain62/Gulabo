@@ -1,8 +1,11 @@
 import React from "react";
+import Breadcrumb from "../components/Breadcrumb";
 
 export default function Component() {
   return (
     <>
+        <Breadcrumb/>
+
       <div
         className="myaccountbase_my-account-detail-wrapper__574qy myaccountbase_saveditems__1DXRJ"
         style={{

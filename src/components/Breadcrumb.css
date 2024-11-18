@@ -1,0 +1,18 @@
+.breadcrumb-container {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  margin: 20px 30px;
+}
+
+.breadcrumb-container a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.breadcrumb-container a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-container span {
+  color: #6c757d;
+}
