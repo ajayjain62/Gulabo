@@ -1,5 +1,6 @@
 import React from "react";
 import Productss from "../components/Productss";
+import Coupon from "../components/Coupon";
 
 export default function Component() {
   return (
@@ -866,6 +867,7 @@ export default function Component() {
                   </div>
                 </ul>
               </div>
+              <Coupon/>
             </div>
             <div
               className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-sm-4 Cart_summaryRightContent__l_ZYt css-1udb513"
