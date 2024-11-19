@@ -1,0 +1,49 @@
+/* Header Component Styles */
+.header-top-background {
+  background-color: #6b3f4f;
+  padding: 0 70px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.header-top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-social-links a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: transform 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.header-social-links a:hover {
+  transform: scale(1.1);
+}
+
+.header-storemode-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-currency-converter {
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.header-store-mode-label {
+  font-size: 12px;
+  color: white;
+  font-weight: 500;
+}

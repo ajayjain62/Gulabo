@@ -22,13 +22,19 @@ const PrivacyPolicy = () => {
 
       <h3 className="privacy-subsection-title">a. Personal Information</h3>
       <ul className="privacy-info-list">
-        <li>Name, phone number, email address, and business details provided when you contact us or make an inquiry.</li>
+        <li>
+          Name, phone number, email address, and business details provided when
+          you contact us or make an inquiry.
+        </li>
         <li>Billing and shipping addresses when processing transactions.</li>
       </ul>
 
       <h3 className="privacy-subsection-title">b. Non-Personal Information</h3>
       <ul className="privacy-info-list">
-        <li>Browsing data such as IP address, browser type, operating system, and pages visited on our website.</li>
+        <li>
+          Browsing data such as IP address, browser type, operating system, and
+          pages visited on our website.
+        </li>
         <li>Cookies to enhance user experience.</li>
       </ul>
 
@@ -59,7 +65,9 @@ const PrivacyPolicy = () => {
         entirely secure, we take all reasonable steps to protect your data.
       </p>
 
-      <h2 className="privacy-section-title">4. Cookies and Tracking Technologies</h2>
+      <h2 className="privacy-section-title">
+        4. Cookies and Tracking Technologies
+      </h2>
       <p className="privacy-text">
         Our website uses cookies to enhance your experience. Cookies help us
         understand user preferences, tailor content, and improve functionality.
@@ -68,23 +76,36 @@ const PrivacyPolicy = () => {
       </p>
 
       <h2 className="privacy-section-title">5. Your Rights and Choices</h2>
-      <p className="privacy-text">You have the following rights regarding your information:</p>
+      <p className="privacy-text">
+        You have the following rights regarding your information:
+      </p>
       <ul className="privacy-info-list">
         <li>Access: Request details of the information we hold about you.</li>
         <li>Correction: Rectify inaccurate or incomplete information.</li>
-        <li>Erasure: Request the deletion of your personal information (subject to legal and operational requirements).</li>
+        <li>
+          Erasure: Request the deletion of your personal information (subject to
+          legal and operational requirements).
+        </li>
         <li>Opt-Out: Unsubscribe from marketing communications at any time.</li>
       </ul>
 
       <p className="privacy-text">To exercise these rights, contact us at:</p>
       <p className="privacy-text">
-        Email: <a href="mailto:GulabiDecor123@gmail.com" className="privacy-link">GulabiDecor123@gmail.com</a>
+        Email:{" "}
+        <a href="mailto:GulabiDecor123@gmail.com" className="privacy-link">
+          GulabiDecor123@gmail.com
+        </a>
       </p>
       <p className="privacy-text">
-        Phone: <a href="tel:+919828052001" className="privacy-link">+91 9828052001</a>
+        Phone:{" "}
+        <a href="tel:+919828052001" className="privacy-link">
+          +91 9828052001
+        </a>
       </p>
 
-      <h2 className="privacy-section-title">6. Changes to this Privacy Policy</h2>
+      <h2 className="privacy-section-title">
+        6. Changes to this Privacy Policy
+      </h2>
       <p className="privacy-text">
         We reserve the right to update this Privacy Policy periodically to
         reflect changes in our business practices or legal requirements. The
@@ -94,18 +115,27 @@ const PrivacyPolicy = () => {
 
       <h2 className="privacy-section-title">7. Contact Us</h2>
       <p className="privacy-text">
-        If you have any questions or concerns about this Privacy Policy or how your information is handled, please reach out to us:
+        If you have any questions or concerns about this Privacy Policy or how
+        your information is handled, please reach out to us:
       </p>
       <p className="privacy-text">Address: F868, VKIA Road No. 14, Jaipur</p>
       <p className="privacy-text">
-        Phone: <a href="tel:+919828052001" className="privacy-link">+91 9828052001</a>
+        Phone:{" "}
+        <a href="tel:+919828052001" className="privacy-link">
+          +91 9828052001
+        </a>
       </p>
       <p className="privacy-text">
-        Email: <a href="mailto:GulabiDecor123@gmail.com" className="privacy-link">GulabiDecor123@gmail.com</a>
+        Email:{" "}
+        <a href="mailto:GulabiDecor123@gmail.com" className="privacy-link">
+          GulabiDecor123@gmail.com
+        </a>
       </p>
 
       <p className="privacy-text">
-        Thank you for trusting Gulabi Decor. We are committed to ensuring your privacy and fostering strong, transparent relationships with our partners.
+        Thank you for trusting Gulabi Decor. We are committed to ensuring your
+        privacy and fostering strong, transparent relationships with our
+        partners.
       </p>
 
       <style jsx>{`

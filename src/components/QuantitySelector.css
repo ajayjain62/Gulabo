@@ -1,0 +1,69 @@
+/* src/components/QuantitySelector.css */
+
+.quantity-selector {
+  box-sizing: border-box;
+  border: 0;
+  font: inherit;
+  vertical-align: initial;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: beige; /* Changed to beige background color */
+  align-items: center;
+  margin: 0 -24px;
+  padding: 18px 25px;
+}
+
+.quantity-text {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.33px;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+}
+
+.quantity-input-box {
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1.5px solid rgb(0, 0, 0);
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  width: 122px;
+  height: 30px;
+}
+
+.quantity-minus,
+.quantity-plus {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  vertical-align: initial;
+  width: 30px;
+  text-align: center;
+  font-weight: 400;
+  cursor: pointer;
+  user-select: none;
+}
+
+.quantity-input {
+  border: none;
+  background: beige; /* Beige background */
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  color: rgb(42, 42, 42);
+  height: 96%;
+  font-size: 12px;
+  width: 70px;
+  pointer-events: none; /* Prevent manual editing */
+}
