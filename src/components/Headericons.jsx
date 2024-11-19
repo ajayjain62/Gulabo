@@ -1,5 +1,6 @@
 import React from 'react'
 import Headerimg from "./Headerimg";
+import { Link } from 'react-router-dom';
 
 function Headericons() {
   return (
@@ -150,8 +151,8 @@ function Headericons() {
                       maxHeight: "90px",
                     }}
                   >
-                    <a
-                      href="https://www.pantaloons.com/login?redirectUrl=/myaccount/saveditems"
+                    <Link 
+                      to="/wishlist"
                       title="Wishlist"
                       style={{
                         boxSizing: "border-box",
@@ -184,7 +185,7 @@ function Headericons() {
                           verticalAlign: "middle",
                           }}
                       />
-                    </a>
+                    </Link>
                   </div>
                   <div
                     className="account-icon"
