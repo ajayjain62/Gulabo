@@ -712,8 +712,8 @@ export default function Component() {
                           }}
                         >
                           <img
-                            alt="Party"
-                            src="https://github.com/ajayjain62/Gulabo/blob/main/src/assets/img/modal/bedsheet%20(2).jpg"
+                            alt="Bedsheets"
+                            src="https://i.postimg.cc/T2j6CPRW/BEDSHEET.webp"
                             title="Party"
                             style={{
                               boxSizing: "border-box",
@@ -751,7 +751,7 @@ export default function Component() {
                           paddingBottom: "15px",
                         }}
                       >
-                        Party
+                        Bedsheets
                       </span>
                       <span
                         className="MuiTouchRipple-root css-w0pj6f"
@@ -866,8 +866,8 @@ export default function Component() {
                           }}
                         >
                           <img
-                            alt="Work Wear"
-                            src="https://s7ap1.scene7.com/is/image/adityabirlafashion/20240830_workwear_womens_stylefinder_desktop_HP2"
+                            alt="Comforter"
+                            src="https://i.postimg.cc/8582m29H/COMFORTER.webp"
                             title="Work Wear"
                             style={{
                               boxSizing: "border-box",
@@ -905,7 +905,7 @@ export default function Component() {
                           paddingBottom: "15px",
                         }}
                       >
-                        Work Wear
+                        Comforter
                       </span>
                       <span
                         className="MuiTouchRipple-root css-w0pj6f"
@@ -1020,8 +1020,8 @@ export default function Component() {
                           }}
                         >
                           <img
-                            alt="Festive"
-                            src="https://s7ap1.scene7.com/is/image/adityabirlafashion/20240830_festive_womens_stylefinder_desktop_HP2"
+                            alt="Cushion"
+                            src="https://i.postimg.cc/mDQ0XdGG/CUSHION.webp"
                             title="Festive"
                             style={{
                               boxSizing: "border-box",
@@ -1059,7 +1059,7 @@ export default function Component() {
                           paddingBottom: "15px",
                         }}
                       >
-                        Festive
+                        Cushion
                       </span>
                       <span
                         className="MuiTouchRipple-root css-w0pj6f"
@@ -1174,8 +1174,8 @@ export default function Component() {
                           }}
                         >
                           <img
-                            alt="Loungewear"
-                            src="https://s7ap1.scene7.com/is/image/adityabirlafashion/20240830_lounge_womens_stylefinder_desktop_HP2"
+                            alt="Dohor"
+                            src="https://i.postimg.cc/rsM7vS8R/DOHAR.webp"
                             title="Loungewear"
                             style={{
                               boxSizing: "border-box",
@@ -1212,7 +1212,7 @@ export default function Component() {
                           paddingBottom: "15px",
                         }}
                       >
-                        Loungewear
+                        Dohor
                       </span>
                       <span
                         className="MuiTouchRipple-root css-w0pj6f"
@@ -1326,8 +1326,8 @@ export default function Component() {
                           }}
                         >
                           <img
-                            alt="Athleisure"
-                            src="https://s7ap1.scene7.com/is/image/adityabirlafashion/20240830_active_womens_stylefinder_desktop_HP2"
+                            alt="Mattress Protector"
+                            src="https://i.postimg.cc/8c4xDj5K/MATTRESS-PROTECTOR.webp"
                             title="Athleisure"
                             style={{
                               boxSizing: "border-box",
@@ -1364,7 +1364,7 @@ export default function Component() {
                           paddingBottom: "15px",
                         }}
                       >
-                        Athleisure
+                        Mattress Protector
                       </span>
                       <span
                         className="MuiTouchRipple-root css-w0pj6f"

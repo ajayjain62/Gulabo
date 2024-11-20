@@ -1,12 +1,12 @@
-import React, { useEffect, useRef } from 'react';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/splide/dist/css/splide.min.css';
-import * as THREE from 'three';
+import React, { useEffect, useRef } from "react";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/splide/dist/css/splide.min.css";
+import * as THREE from "three";
 import bedsheet from "../assets/img/category/bedsheet.jpg";
 import comforter from "../assets/img/category/comforter.jpg";
 import cushion from "../assets/img/category/cushion.jpg";
-import dohar from '../assets/img/category/dohar.jpg';
-import mattressProtector from '../assets/img/category/mattressProtector.jpg';
+import dohar from "../assets/img/category/dohar.jpg";
+import mattressProtector from "../assets/img/category/mattressProtector.jpg";
 
 const Carousel = () => {
   const sceneRef = useRef();
@@ -14,7 +14,12 @@ const Carousel = () => {
   useEffect(() => {
     // Set up the Three.js scene
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(
+      75,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      1000
+    );
     const renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     sceneRef.current.appendChild(renderer.domElement);
@@ -33,7 +38,10 @@ const Carousel = () => {
       particlesArray[i] = (Math.random() - 0.5) * 10;
     }
 
-    particlesGeometry.setAttribute('position', new THREE.BufferAttribute(particlesArray, 3));
+    particlesGeometry.setAttribute(
+      "position",
+      new THREE.BufferAttribute(particlesArray, 3)
+    );
     const particles = new THREE.Points(particlesGeometry, particlesMaterial);
     scene.add(particles);
 
@@ -51,38 +59,38 @@ const Carousel = () => {
       camera.updateProjectionMatrix();
       renderer.setSize(window.innerWidth, window.innerHeight);
     };
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
       sceneRef.current.removeChild(renderer.domElement);
     };
   }, []);
 
   return (
-    <div style={{ position: 'relative' }}>
+    <div style={{ position: "relative" }}>
       {/* Three.js Background */}
       <div
         ref={sceneRef}
         style={{
-          position: 'absolute',
+          position: "absolute",
           top: 0,
           left: 0,
-          width: '100%',
-          height: '100%',
+          width: "100%",
+          height: "100%",
           zIndex: -1,
         }}
       ></div>
 
       {/* Carousel */}
-      <div style={{ padding: '40px 40px', position: 'relative', zIndex: 1 }}>
+      <div style={{ padding: "40px 40px", position: "relative", zIndex: 1 }}>
         <Splide
           options={{
-            type: 'loop',
-            drag: 'free',
+            type: "loop",
+            drag: "free",
             snap: true,
-            perPage: 5,
-            gap: '20px',
+            perPage: window.innerWidth < 768 ? 2 : 5, // Adjust items per page for mobile
+            gap: "10px",
             arrows: false,
             pagination: true,
           }}
@@ -97,23 +105,29 @@ const Carousel = () => {
             <SplideSlide key={index}>
               <div
                 style={{
-                  padding: '10px',
-                  textAlign: 'center',
-                  cursor: 'pointer',
+                  padding: "10px",
+                  textAlign: "center",
+                  cursor: "pointer",
                 }}
               >
                 <img
                   src={item.src}
                   alt={item.label}
                   style={{
-                    width: '100%',
-                    height: 'auto',
-                    borderRadius: '8px',
-                    transition: 'transform 0.3s ease', // Smooth transition
+                    width: "100%",
+                    height: "auto",
+                    borderRadius: "8px",
+                    transition: "transform 0.3s ease",
                   }}
                   className="hover-image"
                 />
-                <div style={{ marginTop: '10px', fontWeight: 'bold' }}>
+                <div
+                  style={{
+                    marginTop: "10px",
+                    fontWeight: "bold",
+                    fontSize: "14px", // Adjust font size for smaller screens
+                  }}
+                >
                   {item.label}
                 </div>
               </div>
@@ -126,7 +140,27 @@ const Carousel = () => {
       <style>
         {`
           .hover-image:hover {
-            transform: scale(1.05); /* Grows slightly on hover */
+            transform: scale(1.05);
+          }
+
+          /* Mobile-specific styles */
+          @media (max-width: 768px) {
+            .splide {
+              padding: 20px; /* Adjust padding */
+            }
+
+            .splide__slide {
+              text-align: center;
+            }
+
+            img {
+              border-radius: 5px;
+            }
+
+            div {
+              font-size: 12px; /* Smaller font size for mobile */
+              font-weight: 600; /* Slightly lighter weight for mobile */
+            }
           }
         `}
       </style>

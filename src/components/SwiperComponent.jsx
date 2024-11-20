@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import banner from "../assets/img/category/banner.jpg"
 import banner2 from "../assets/img/category/banner2.jpg"
 import banner3 from "../assets/img/category/banner3.jpg"
+import './SwiperComponent.css'; // External responsive styles
+
 
 function SwiperComponent() {
   return (

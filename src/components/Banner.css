@@ -48,8 +48,8 @@
 }
 
 .banner-image img {
-  max-width: 45%;
-  height: auto;
+  max-width: 100%;
+  height: 220px;
   border-radius: 8px;
 }
 

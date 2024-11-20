@@ -19,16 +19,15 @@ const Banner = () => {
         {/* Slide 1 */}
         <div className="banner-slide">
           <div className="banner-content">
-            <div className="banner-text">
+            {/* <div className="banner-text">
               <h1>Unmissable Denim Deal</h1>
               <p>Up to 50% off</p>
-              <a href="#" className="shop-now-button">Shop Now</a>
-            </div>
+              <a href="#" className="shop-now-button">
+                Shop Now
+              </a>
+            </div> */}
             <div className="banner-image">
-              <img
-                src="https://via.placeholder.com/600x400"
-                alt="Denim Deal"
-              />
+              <img src="https://i.postimg.cc/kGsvDSWS/1.jpg" alt="Denim Deal" />
             </div>
           </div>
         </div>
@@ -36,14 +35,16 @@ const Banner = () => {
         {/* Slide 2 */}
         <div className="banner-slide">
           <div className="banner-content">
-            <div className="banner-text">
+            {/* <div className="banner-text">
               <h1>Exclusive Winter Collection</h1>
               <p>Flat 40% off</p>
-              <a href="#" className="shop-now-button">Shop Now</a>
-            </div>
+              <a href="#" className="shop-now-button">
+                Shop Now
+              </a>
+            </div> */}
             <div className="banner-image">
               <img
-                src="https://via.placeholder.com/600x400"
+                src="https://i.postimg.cc/WpYnRGbR/2.jpg"
                 alt="Winter Collection"
               />
             </div>
@@ -53,14 +54,16 @@ const Banner = () => {
         {/* Slide 3 */}
         <div className="banner-slide">
           <div className="banner-content">
-            <div className="banner-text">
+            {/* <div className="banner-text">
               <h1>Summer Sale</h1>
               <p>Up to 60% off</p>
-              <a href="#" className="shop-now-button">Shop Now</a>
-            </div>
+              <a href="#" className="shop-now-button">
+                Shop Now
+              </a>
+            </div> */}
             <div className="banner-image">
               <img
-                src="https://via.placeholder.com/600x400"
+                src="https://i.postimg.cc/sDBJ3MvM/3.jpg"
                 alt="Summer Sale"
               />
             </div>
