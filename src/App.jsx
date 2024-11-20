@@ -27,8 +27,6 @@ import Return from "./pages/Return";
 import Cart from "./pages/Cart";
 import Compare from "./pages/Compare";
 import Wishlist from "./pages/Wishlist";
-import MobileHeader from "./components/MobileHeader.jsx";
-// import Ham from "./components/Ham"; // If the correct name is Hamburger
 import "./assets/css/loader.css"; // Import the loader styles
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -56,7 +54,6 @@ const App = () => {
       <>
         <Header />
         <Header1 />
-        <MobileHeader/>
         <Navbar />
         {children}
         <Footer />
@@ -93,7 +90,6 @@ const App = () => {
                   <Route path="/terms-and-conditions" element={<Terms />} />
                   <Route path="/return-and-refund" element={<Return />} />
                   <Route path="/shipping" element={<Shipping />} />
-                  {/* <Route path="/ham" element={<Ham />} /> */}
 
                 </Routes>
               </Layout>

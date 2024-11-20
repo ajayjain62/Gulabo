@@ -85,6 +85,9 @@ const Carousel = () => {
             gap: '20px',
             arrows: false,
             pagination: true,
+            breakpoints: {
+              768: { perPage: 2, gap: '10px' }, // Adjust carousel for mobile
+            },
           }}
         >
           {[
