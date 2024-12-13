@@ -1,0 +1,196 @@
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-section {
+  background: #fff; /* White background */
+  position: relative;
+}
+
+.footer-cta {
+  border-bottom: 1px solid #eaeaea; /* Light gray divider */
+}
+
+.single-cta i {
+  color: #6b3f4f; /* Sophisticated warm tone */
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.cta-text h4 {
+  color: #333; /* Dark gray for headings */
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span {
+  color: #666; /* Medium gray for text */
+  font-size: 15px;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  max-width: 200px;
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #666; /* Medium gray for content text */
+  line-height: 28px;
+}
+
+.footer-social-icon span {
+  color: #333; /* Darker text for visibility */
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer-social-icon a {
+  color: #6b3f4f; /* Accent color */
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  border: 1px solid #6b3f4f; /* Border matches accent color */
+}
+
+.facebook-bg {
+  background: #4267B2; /* Facebook blue */
+  color: #fff;
+}
+
+.twitter-bg {
+  background: #1DA1F2; /* Twitter blue */
+  color: #fff;
+}
+
+.google-bg {
+  background: #EA4335; /* Google red */
+  color: #fff;
+}
+
+.footer-widget-heading h3 {
+  color: #333; /* Dark gray for headings */
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+}
+
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+  color: #6b3f4f; /* Accent color on hover */
+}
+
+.footer-widget ul li a {
+  color: #666; /* Medium gray for links */
+  text-transform: capitalize;
+}
+
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #f9f9f9; /* Light gray background for input */
+  border: 1px solid #ddd; /* Subtle border */
+  color: #333; /* Dark text for input */
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #6b3f4f; /* Accent color for button */
+  padding: 13px 20px;
+  border: 1px solid #6b3f4f;
+  top: 0;
+  color: #fff;
+}
+
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+
+.copyright-area {
+  background: #f7f7f7; /* Light gray for copyright area */
+  padding: 25px 0;
+}
+
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #666; /* Medium gray for copyright text */
+}
+
+.copyright-text p a {
+  color: #6b3f4f; /* Accent color for links */
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+  color: #6b3f4f; /* Accent color on hover */
+}
+
+.footer-menu li a {
+  font-size: 14px;
+  color: #666; /* Medium gray for menu links */
+}
