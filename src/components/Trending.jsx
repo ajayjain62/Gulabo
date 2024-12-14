@@ -6,19 +6,19 @@ import "slick-carousel/slick/slick-theme.css";
 const trendingStyles = [
   {
     title: "Timeless Retro",
-    imageUrl: "https://via.placeholder.com/200x300?text=Decor+Image+1", // Dummy decor image
+    imageUrl: "https://via.placeholder.com/200x300?text=Decor+Image+1",
   },
   {
     title: "Indigo Moods",
-    imageUrl: "https://via.placeholder.com/200x300?text=Decor+Image+2", // Dummy decor image
+    imageUrl: "https://via.placeholder.com/200x300?text=Decor+Image+2",
   },
   {
     title: "Funky Fusion",
-    imageUrl: "https://via.placeholder.com/200x300?text=Decor+Image+3", // Dummy decor image
+    imageUrl: "https://via.placeholder.com/200x300?text=Decor+Image+3",
   },
   {
     title: "Polo Play",
-    imageUrl: "https://via.placeholder.com/200x300?text=Decor+Image+4", // Dummy decor image
+    imageUrl: "https://via.placeholder.com/200x300?text=Decor+Image+4",
   },
 ];
 
@@ -41,26 +41,27 @@ const useMediaQuery = (query) => {
 const TrendingStyles = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
 
-  const settings = {
+  const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    // speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 3000,
+    swipe: true, // Enable swipe gestures for mobile
   };
 
   return (
     <div
       style={{
         textAlign: "center",
-        padding: "40px",
+        padding: isMobile ? "20px 10px" : "40px",
         margin: "20px auto",
         width: "100%",
         maxWidth: "1320px",
         borderRadius: "10px",
-        boxShadow: "0 4px 20px rgba(0, 0, 0, 0.15)", // Section background shadow
+        boxShadow: "0 4px 20px rgba(0, 0, 0, 0.15)",
         backgroundColor: "#f8f8f8",
         fontFamily: "Trirong, serif",
       }}
@@ -83,18 +84,10 @@ const TrendingStyles = () => {
         />
         <h2
           style={{
-            boxSizing: "border-box",
             margin: "0px",
-            border: "0px",
-            verticalAlign: "initial",
             padding: "13px 0px 11px",
             font: "italic 400 24px Trirong, serif",
-            fontStyle: "italic",
             fontWeight: 600,
-            fontStretch: "normal",
-            fontSize: "24px",
-            lineHeight: "normal",
-            fontFamily: "Trirong, serif",
             letterSpacing: "1.1px",
             color: "rgb(0, 0, 0)",
             textAlign: "center",
@@ -113,32 +106,30 @@ const TrendingStyles = () => {
         />
       </div>
       {isMobile ? (
-        <Slider {...settings}>
+        <Slider {...sliderSettings}>
           {trendingStyles.map((style, index) => (
             <div key={index} style={{ textAlign: "center", padding: "10px" }}>
               <img
                 src={style.imageUrl}
                 alt={style.title}
                 style={{
-                  width: "200px",
+                  width: "100%",
+                  maxWidth: "200px",
                   height: "auto",
                   borderRadius: "8px",
-                  boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)", // Image box shadow
+                  boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+                  margin: "0 auto",
                 }}
               />
               <p
                 style={{
-                  fontSize: "18px",
+                  fontSize: "16px",
                   fontWeight: "500",
                   marginTop: "10px",
                   color: "#333",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  gap: "5px",
                 }}
               >
-                <span style={{ fontSize: "20px", color: "#000" }}>▶</span> {style.title}
+                {style.title}
               </p>
             </div>
           ))}
@@ -154,7 +145,7 @@ const TrendingStyles = () => {
                   width: "200px",
                   height: "auto",
                   borderRadius: "8px",
-                  boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)", // Image box shadow
+                  boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
                 }}
               />
               <p
@@ -163,13 +154,9 @@ const TrendingStyles = () => {
                   fontWeight: "500",
                   marginTop: "10px",
                   color: "#333",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  gap: "5px",
                 }}
               >
-                <span style={{ fontSize: "20px", color: "#000" }}>▶</span> {style.title}
+                {style.title}
               </p>
             </div>
           ))}

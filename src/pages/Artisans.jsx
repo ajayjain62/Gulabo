@@ -1,149 +1,158 @@
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import '../assets/css/bootstrap.min.css';
-import '../assets/css/style.min.css';
-import "../assets/css/style.css";
-import artisan1 from "../assets/img/category/artisan1.jpg"
-import artisan2 from "../assets/img/category/artisan2.jpg"
-import artisan3 from "../assets/img/category/artisan3.jpg"
-import artisan4 from "../assets/img/category/artisan4.jpg"
-import "../assets/css/textanimation.css"
+import React from "react";
+import Slider from "react-slick";
+import palmTree from "../assets/img/category/bedsheet.jpg";
+import leaflet from "../assets/img/category/bedsheet.jpg";
+import reversible from "../assets/img/category/bedsheet.jpg";
+import honey from "../assets/img/category/bedsheet.jpg";
+import hoops from  "../assets/img/category/bedsheet.jpg";
+import floret from "../assets/img/category/bedsheet.jpg";
+// import honey from "../assets/img/category/honey.jpeg";
+// import hoops from "../assets/img/category/hoops.jpeg";
+// import floret from "../assets/img/category/hoops.jpeg";
 
+const shopItems = [
+  { image: reversible, title: "bedsheet" },
+  { image: hoops, title: "Hoops" },
+  { image: honey, title: "Honey comb" },
+  { image: floret, title: "White Floret" },
+  { image: leaflet, title: "Leaflet" },
+  { image: palmTree, title: "Palm Tree" },
+  
+];
 
-const Artisans = () => {
+const ShopTheLookCarousel = () => {
+  const settings = {
+    infinite: true,
+    centerMode: false,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    centerPadding: "2",
+    autoplay: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024, // Tablets
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768, // Mobile devices
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480, // Smaller phones
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 
   return (
-    <div className="container p-4 home"
-    style={{
-      borderRadius: '10px',
-      boxShadow: "0px 0px 20px hsl(0, 0%, 80%)",
-      marginTop: "30px"
-    }}
-    >
-     {/* New Arrivals Section */}
-     <section className=" bg-white " style={{cursor: 'mouse'}}>
-  <div className="container">
-    <div className="section-title text-center">
-      <h2 
-        className="title pb-3 mb-3"
-        style={{ 
-          boxSizing: "border-box",
-          margin: "0px",
-          padding: "5px 0px 11px",
-          fontStyle: "normal",
-          fontWeight: 600,
-          fontSize: "24px",
-          lineHeight: "normal",
-          fontFamily: "Trirong, serif",
-          letterSpacing: "1.1px",
-          color: "rgb(0, 0, 0)",
-          textAlign: "center",
-        }}
-      >
-          Meet Your Artisans    </h2>
-      <p 
-        className="text"
-        style={{
-          boxSizing: "border-box",
-          margin: "0px",
-          fontStyle: "italic",
-          fontWeight: 400,
-          fontSize: "18px",
-          lineHeight: "normal",
-          fontFamily: "Trirong, serif",
-          letterSpacing: "1.1px",
-          color: "rgb(0, 0, 0)",
-          textAlign: "center",
-        }}
-      >
-       At Gulabi Decor, our artisans pour their heart into every stitch. With decades of experience, they carefully handcraft each piece, ensuring the highest quality and comfort. Their skill and dedication shine through in every piece, making your home feel warm, welcoming, and beautifully crafted.
-      </p>
-     
-    </div>
-  </div>
-</section>
+    <>
+      <style>{`
+        .shop-the-look-carousel-wrapper {
+          padding: 20px 10px;
+        }
 
-      <div className="row  d-flex justify-content-center align-item-center">
-        <div className="col-sm-3">
-        <img
-            src={artisan1}
-            style={{
-              borderRadius: '10px',
-              objectFit: "cover", // Ensures the image maintains aspect ratio within the container
-              filter: "grayscale(100%)", // Start with black and white
-              transition: "transform 0.3s ease, filter 0.3s ease", // Smooth transition for scaling and color change
-            }}
-            onMouseEnter={(e) => {
-              e.target.style.filter = "grayscale(0%)"; // Remove grayscale on hover
-              e.target.style.transform = "scale(1.1)"; // Grow the image on hover
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.filter = "grayscale(100%)"; // Add grayscale when not hovered
-              e.target.style.transform = "scale(1)"; // Reset the image size when not hovered
-            }}
-          />
+        .carousel-item {
+          text-align: center;
+          margin: 0 auto;
+        }
+
+        .carousel-content {
+          padding: 10px;
+        }
+
+        .carousel-image {
+          max-width: 100%;
+          height: auto;
+          margin: 0 auto;
+          border-radius: 8px;
+        }
+
+        .shop-now {
+          margin-top: 10px;
+          background-color: #333;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          font-size: 14px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+
+        .shop-now:hover {
+          background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+          .carousel-image {
+            width: 80%;
+          }
+
+          .shop-now {
+            font-size: 12px;
+            padding: 8px 16px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .carousel-image {
+            width: 90%;
+          }
+
+          .shop-now {
+            font-size: 12px;
+            padding: 6px 12px;
+          }
+        }
+      `}</style>
+      <section className="shop-the-look-carousel-wrapper">
+        <div className="shop-the-look-carousel">
+          <div className="container">
+            <div className="section-title text-center" style={{ marginTop: "3%" }}>
+              <h2
+                className="title"
+                style={{
+                  margin: "0px",
+                  padding: "13px 0px 11px",
+                  font: "italic 400 24px Trirong, serif",
+                  fontWeight: 600,
+                  letterSpacing: "1.1px",
+                  color: "#333",
+                }}
+              >
+                Shop By Design
+              </h2>
+              <p className="text" style={{ color: "grey", fontSize: "18px", fontWeight: "100" }}>
+                Shop the Trendiest Designs for Your Perfect Decor
+              </p>
+            </div>
+          </div>
+          <Slider {...settings}>
+            {shopItems.map((item, index) => (
+              <div key={index} className="carousel-item">
+                <div className="carousel-content">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="carousel-image"
+                  />
+                  <button className="shop-now">
+                    {item.title}
+                  </button>
+                </div>
+              </div>
+            ))}
+          </Slider>
         </div>
-        <div className="col-sm-3">
-        <img
-            src={artisan2}
-            style={{
-              borderRadius: '10px',
-              objectFit: "cover", // Ensures the image maintains aspect ratio within the container
-              filter: "grayscale(100%)", // Start with black and white
-              transition: "transform 0.3s ease, filter 0.3s ease", // Smooth transition for scaling and color change
-            }}
-            onMouseEnter={(e) => {
-              e.target.style.filter = "grayscale(0%)"; // Remove grayscale on hover
-              e.target.style.transform = "scale(1.1)"; // Grow the image on hover
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.filter = "grayscale(100%)"; // Add grayscale when not hovered
-              e.target.style.transform = "scale(1)"; // Reset the image size when not hovered
-            }}
-          />
-        </div>
-        <div className="col-sm-3">
-        <img
-            src={artisan3}
-            style={{
-              borderRadius: '10px',
-              objectFit: "cover", // Ensures the image maintains aspect ratio within the container
-              filter: "grayscale(100%)", // Start with black and white
-              transition: "transform 0.3s ease, filter 0.3s ease", // Smooth transition for scaling and color change
-            }}
-            onMouseEnter={(e) => {
-              e.target.style.filter = "grayscale(0%)"; // Remove grayscale on hover
-              e.target.style.transform = "scale(1.1)"; // Grow the image on hover
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.filter = "grayscale(100%)"; // Add grayscale when not hovered
-              e.target.style.transform = "scale(1)"; // Reset the image size when not hovered
-            }}
-          />
-        </div>
-        <div className="col-sm-3">
-        <img
-            src={artisan4}
-            style={{
-              borderRadius: '10px',
-              objectFit: "cover", // Ensures the image maintains aspect ratio within the container
-              filter: "grayscale(100%)", // Start with black and white
-              transition: "transform 0.3s ease, filter 0.3s ease", // Smooth transition for scaling and color change
-            }}
-            onMouseEnter={(e) => {
-              e.target.style.filter = "grayscale(0%)"; // Remove grayscale on hover
-              e.target.style.transform = "scale(1.1)"; // Grow the image on hover
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.filter = "grayscale(100%)"; // Add grayscale when not hovered
-              e.target.style.transform = "scale(1)"; // Reset the image size when not hovered
-            }}
-          />
-        </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 
-
-export default Artisans;
+export default ShopTheLookCarousel;
